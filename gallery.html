@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles_gallery.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <script src="script_gallery.js" defer></script>
+    <title>PJ portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="horizontalNavigation_left">           
+            <ul>
+                <li><a href="index.html"><img src="img/lock.png" alt="" width="3%" height="3%" />
+                    &nbsp;This is me...</a></li>
+            </ul>
+         </nav>
+        <nav class="horizontalNavigation_right">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="portfolio.html">My Portfolio</a></li>
+               <li><a href="gallery.html"><u>My Gallery</u></a></li>
+               <li><a href="aboutme.html">About Me</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+    </header>
+    <section id="main">
+        <div class="slideshow-container">
+
+            <div class="slide fade">
+                <img src="img/me1.jpg" alt="Image 1">
+            </div>
+
+            <div class="slide fade">
+                <img src="img/me2.jpg" alt="Image 2">
+            </div>
+
+            <div class="slide fade">
+                <img src="img/me3.jpg" alt="Image 3">
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+    <footer>
+        <p>PAGE03</p>
+        <div class="footer-box-container">
+            <div class="footer-box_left">&nbsp;</div>
+            <div class="footer-box_right">&nbsp;</div>
+        </div>
+    </footer>
+</body>
+</html>

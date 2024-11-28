@@ -1,0 +1,125 @@
+html {
+    background-color: rgb(4, 4, 4);
+    font-family: Anton;
+    color: white;
+ }
+
+body {
+    background-image: url("img/bg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;    
+    background-size: 100% 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    min-width: 640px;
+    width: 95%;
+}
+
+header {
+    display: flex;  
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.horizontalNavigation_left {
+    display: flex; 
+    align-items: center; 
+}
+
+nav.horizontalNavigation_left img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px;
+}
+
+nav.horizontalNavigation_left a {
+    display: flex; 
+    align-items: center; 
+    font-size: 1em; 
+    color: white;
+}
+
+nav.horizontalNavigation_right ul {
+    display: flex; 
+    gap: 20px; 
+}
+
+nav.horizontalNavigation_right li {
+    list-style: none;
+}
+
+/* ============= Content =========== */
+
+section#main {   
+   display: block;
+   padding-top: 100px;
+   padding-bottom: 160px;
+   text-align: center;
+}
+
+.text-name{
+    font-size: xxx-large;
+}
+.text-base {
+    position: absolute;
+    z-index: 1; 
+    padding-left: 230px;
+    font-size: 4em;
+}
+.text-overlay {
+    position: absolute; 
+    z-index: 0; 
+    padding-left: 230px;
+    font-size: 4em;
+
+    color: rgba(255, 255, 255, 0.2); 
+    transform: translate(10px, 10px); 
+}
+ 
+/* ============= End =========== */ 
+
+footer {
+    display: flex;
+    flex-direction: column; 
+   
+    padding: 0px; 
+    height: auto; 
+}
+
+footer p {
+    font-style:normal;
+    font-size: 0.8em; 
+    align-self: flex-end; 
+    transform: rotate(90deg); 
+    margin: 0; 
+    padding: 0; 
+}
+
+footer .footer-box_left, footer .footer-box_right {
+    height: 40px; 
+    width: 40px; 
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); /* ไล่เฉดสีจากซ้ายไปขวา */
+}
+
+footer .footer-box-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 30px; 
+}
+
+

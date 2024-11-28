@@ -1,0 +1,164 @@
+html {
+    background-color: rgb(4, 4, 4);
+    font-family: Anton;
+    color: white;
+ }
+
+body {
+    background-image: url("img/bg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;    
+    background-size: 100% 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    min-width: 640px;
+    width: 95%;
+}
+
+header {
+    display: flex;  
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.horizontalNavigation_left {
+    display: flex; 
+    align-items: center; 
+}
+
+nav.horizontalNavigation_left img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px;
+}
+
+nav.horizontalNavigation_left a {
+    display: flex; 
+    align-items: center; 
+    font-size: 1em; 
+    color: white;
+}
+
+nav.horizontalNavigation_right ul {
+    display: flex; 
+    gap: 20px; 
+}
+
+nav.horizontalNavigation_right li {
+    list-style: none;
+}
+
+/* ============= Content =========== */
+
+.slideshow-container {
+    position: relative;
+    /* max-width: 100%; */
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.slide {
+    display: none; 
+    position: relative;
+}
+
+.slide img {
+    /* width: 100%;  */
+
+    max-width: 70%;
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+    
+    border: 10px solid white;    
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    user-select: none;
+    z-index: 2;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fade Animation */
+.fade {
+    animation: fadeEffect 1s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ============= End =========== */ 
+
+footer {
+    display: flex;
+    flex-direction: column; 
+   
+    padding: 0px; 
+    height: auto; 
+}
+
+footer p {
+    font-style:normal;
+    font-size: 0.8em; 
+    align-self: flex-end; 
+    transform: rotate(90deg); 
+    margin: 0; 
+    padding: 0; 
+}
+
+footer .footer-box_left, footer .footer-box_right {
+    height: 40px; 
+    width: 40px; 
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); /* ไล่เฉดสีจากซ้ายไปขวา */
+}
+
+footer .footer-box-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 30px; 
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles_contact.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <script src="script_contact.js" defer></script>
+    <title>PJ portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="horizontalNavigation_left">           
+            <ul>
+                <li><a href="index.html"><img src="img/lock.png" alt="" width="3%" height="3%" />
+                    &nbsp;This is me...</a></li>
+            </ul>
+         </nav>
+        <nav class="horizontalNavigation_right">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="portfolio.html">My Portfolio</a></li>
+               <li><a href="gallery.html">My Gallery</a></li>
+               <li><a href="aboutme.html">About Me</a></li>
+               <li><a href="contact.html"><u>Contact</u></a></li>
+            </ul>
+         </nav>
+    </header>
+    <section id="main">
+        <h1>Contact Me</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your name"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number e.g, 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email, e.g, ???@???.com"><br>
+            <label for="comment">Comment:</label><br>
+            <textarea id="subject" name="subject" placeholder="Let us know your message" style="height:100px"></textarea>
+            <input type="submit" value="Submit">
+        </form>    
+          
+    </section>
+    <footer>
+        <p>PAGE05</p>
+        <div class="footer-box-container">
+            <div class="footer-box_left">&nbsp;</div>
+            <div class="footer-box_right">&nbsp;</div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
